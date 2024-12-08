@@ -3,7 +3,6 @@
     ```git clone --recurse-submodules https://github.com/thekevalian/PokeRL.git```
 2. Setup the Showdown Server: 
     ```
-    git clone https://github.com/smogon/pokemon-showdown.git
     cd pokemon-showdown
     npm install
     cp config/config-example.js config/config.js
