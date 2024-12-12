@@ -7,19 +7,29 @@
     cd pokemon-showdown
     npm install
     cp config/config-example.js config/config.js
-    node pokemon-showdown start --no-security
     ```
-3. Create Python Environment and Install Dependencies
+3. Create Python Environment and Install Dependencies (You will need to modify some steps for MacOS and Linux)
     ```
     python -m venv .venv
-    .\.venv\Scripts\activate
+    .venv\Scripts\activate
     pip install -r requirements.txt
+    git clone https://github.com/hsahovic/poke-env.git
+    cd poke-env
+    pip install -r requirements.txt
+    pip install -r requirements-dev.txt
+    cd ..
+    pip install -e poke-env
     ```
-4. Step 2 should have launched the local pokemon showdown server. You should now be able to run rl_example.py
-    ```
-    python rl_example.py
-    ```
+4. You are all setup. Checkout the rl_train, rl_test and rl_play scripts 
+
+When running all poke-env scripts, make sure that the Pokemon Server is up. You can turn it on by running the following command in your terminal:
+```
+node pokemon-showdown start --no-security
+```
+
+
 
 ### Citations
 1. https://github.com/smogon/pokemon-showdown
 2. https://github.com/hsahovic/poke-env
+
