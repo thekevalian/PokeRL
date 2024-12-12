@@ -23,7 +23,7 @@
     ```
 4. You are all setup. Checkout the rl_train, rl_test and rl_play scripts 
 
-When running all poke-env scripts, make sure that the Pokemon Server is up. You can turn it on by running the following command in your terminal:
+When running all poke-env scripts, make sure that the Pokemon Server is up. You can turn it on by running the following command in your terminal, while being in the pokemon-showdown directory:
 ```node pokemon-showdown start --no-security```
 
 
