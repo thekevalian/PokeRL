@@ -7,6 +7,7 @@
     cd pokemon-showdown
     npm install
     cp config/config-example.js config/config.js
+    cd ..
     ```
 3. Create Python Environment and Install Dependencies (You will need to modify some steps for MacOS and Linux)
     ```
@@ -23,10 +24,7 @@
 4. You are all setup. Checkout the rl_train, rl_test and rl_play scripts 
 
 When running all poke-env scripts, make sure that the Pokemon Server is up. You can turn it on by running the following command in your terminal:
-```
-node pokemon-showdown start --no-security
-```
-
+```node pokemon-showdown start --no-security```
 
 
 ### Citations
