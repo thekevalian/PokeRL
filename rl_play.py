@@ -14,7 +14,7 @@ opponent = "tomatosarebetter"  # Enter your chosen name here
 env_player = Players.SimpleRLPlayer0(opponent=opponent)
 env_player.reset_battles()
 
-model_path = f"{model_dir}/260000.zip"  # Change this to your best model
+model_path = f"{model_dir}/80000.zip"  # Change this to your best model
 model = A2C.load(model_path, env=env_player, device="cpu")
 
 TEST_EPISODES = 100
